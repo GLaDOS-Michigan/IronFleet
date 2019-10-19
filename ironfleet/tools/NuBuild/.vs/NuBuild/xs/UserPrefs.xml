@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{4D7220C0-3CAA-4659-9F16-A564DB3CCC1B}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CloudExecutionWorker/WorkerRole.cs">
+    <Files>
+      <File FileName="CloudExecutionWorker/WorkerRole.cs" Line="12" Column="21" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="NuBuild" expanded="True">
+            <Node name="Solution Items" expanded="True" />
+            <Node name="AzureManager" expanded="True" />
+            <Node name="CloudExecutionWorker" expanded="True">
+              <Node name="WorkerRole.cs" selected="True" />
+            </Node>
+            <Node name="NuBuild" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.NuBuild PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
