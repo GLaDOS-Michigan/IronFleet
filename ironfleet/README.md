@@ -115,9 +115,11 @@ It consists of N processes passing around a lock. To run it, you need to supply 
 with the IP-port pairs of all processes, as well as its own IP-pair. For example, this is a 
 configuration with three processes:
 
-  `./nuobj/Dafny//Distributed/Services/Lock/Main_i.exe 127.0.0.1 4001 127.0.0.1 4002 127.0.0.1 4003 127.0.0.1 4002'
-  `./nuobj/Dafny//Distributed/Services/Lock/Main_i.exe 127.0.0.1 4001 127.0.0.1 4002 127.0.0.1 4003 127.0.0.1 4003'
-  `./nuobj/Dafny//Distributed/Services/Lock/Main_i.exe 127.0.0.1 4001 127.0.0.1 4002 127.0.0.1 4003 127.0.0.1 4001'
+```
+  ./nuobj/Dafny//Distributed/Services/Lock/Main_i.exe 127.0.0.1 4001 127.0.0.1 4002 127.0.0.1 4003 127.0.0.1 4002
+  ./nuobj/Dafny//Distributed/Services/Lock/Main_i.exe 127.0.0.1 4001 127.0.0.1 4002 127.0.0.1 4003 127.0.0.1 4003
+  ./nuobj/Dafny//Distributed/Services/Lock/Main_i.exe 127.0.0.1 4001 127.0.0.1 4002 127.0.0.1 4003 127.0.0.1 4001
+```
 
 It is important that you start the "first" process last, as it initially holds the lock and will
 immediately start passing it around. As this is a toy example, message retransmission is not implemented.
@@ -136,10 +138,12 @@ we're using 3, but more is feasible).  Each server instance also needs to be tol
 IP-port pair belongs to it.  The client also needs to know it's own IP, how many threads
 to use when generating requests, and how long to run for (in seconds).
 
-  `./nuobj/Dafny/Distributed/Services/RSL/Main_i.exe 127.0.0.1 4001 127.0.0.1 4002 127.0.0.1 4003 127.0.0.1 4001`
-  `./nuobj/Dafny/Distributed/Services/RSL/Main_i.exe 127.0.0.1 4001 127.0.0.1 4002 127.0.0.1 4003 127.0.0.1 4002`
-  `./nuobj/Dafny/Distributed/Services/RSL/Main_i.exe 127.0.0.1 4001 127.0.0.1 4002 127.0.0.1 4003 127.0.0.1 4003`
-  `./src/IronfleetClient/IronfleetClient/bin/Release/IronfleetClient.exe 127.0.0.1 127.0.0.1 4001 127.0.0.1 4002 127.0.0.1 4003 1 10`
+```
+  ./nuobj/Dafny/Distributed/Services/RSL/Main_i.exe 127.0.0.1 4001 127.0.0.1 4002 127.0.0.1 4003 127.0.0.1 4001
+  ./nuobj/Dafny/Distributed/Services/RSL/Main_i.exe 127.0.0.1 4001 127.0.0.1 4002 127.0.0.1 4003 127.0.0.1 4002
+  ./nuobj/Dafny/Distributed/Services/RSL/Main_i.exe 127.0.0.1 4001 127.0.0.1 4002 127.0.0.1 4003 127.0.0.1 4003
+  ./src/IronfleetClient/IronfleetClient/bin/Release/IronfleetClient.exe 127.0.0.1 127.0.0.1 4001 127.0.0.1 4002 127.0.0.1 4003 1 10
+```
 
 The client will print out a GUID, but all of its interesting output goes to:
 
